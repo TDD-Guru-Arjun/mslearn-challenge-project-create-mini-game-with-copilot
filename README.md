@@ -15,23 +15,27 @@ Demo
 ```bash
 # Example game flow:
 """
-Choose between rock, paper or scissors: rock
-You chose rock and the computer chose rock.
-It's a tie.
-Do you want to play again? (y/n) y
+Round 1
 Choose between rock, paper or scissors: rock
 You chose rock and the computer chose paper.
 You lost.
 Do you want to play again? (y/n) y
+Round 2
 Choose between rock, paper or scissors: paper
 You chose paper and the computer chose rock.
 You won!
 Do you want to play again? (y/n) y
-Choose between rock, paper or scissors: paper
-You chose paper and the computer chose rock.
-You won!
+Round 3
+Choose between rock, paper or scissors: scissors
+You chose scissors and the computer chose scissors.
+It's a tie.
+Do you want to play again? (y/n) y
+Round 4
+Choose between rock, paper or scissors: rock
+You chose rock and the computer chose paper.
+You lost.
 Do you want to play again? (y/n) n
-You scored 2 points and the computer scored 1 points.
+You scored 1 points and the computer scored 2 points in total rounds=4.
 Thanks for playing. Good Bye!
 """
 ```
