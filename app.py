@@ -1,5 +1,5 @@
 """
-goal is to develop the logic of the Python mini-game with the help of GitHub Copilot based in the specifications bellow.
+goal is to develop the logic of the Python minigame with the help of GitHub Copilot based in the specifications bellow.
 
 Specification
 As we learned in the introduction to this challenge, the winner of the game is determined by three simple rules:
@@ -27,7 +27,7 @@ from typing import Literal
 options: list[str] = ["rock", "paper", "scissors"]
 
 # Now, we need to create variables to store the player"s and computer"s scores
-player_score, computer_score = 0, 0
+player_score, computer_score, rounds = 0, 0, 0
 
 
 # Now, we need to create a function to get the player"s choice
@@ -144,7 +144,7 @@ def display_scores() -> None:
     Returns:
         None
     """
-    print(f"You scored {player_score} points and the computer scored {computer_score} points.")
+    print(f"You scored {player_score} points and the computer scored {computer_score} points in total {rounds=}.")
 
 def good_bye() -> None:
     """
@@ -194,7 +194,9 @@ def play_game() -> None:
     Returns:
         None
     """
-    global player_score, computer_score
+    global player_score, computer_score, rounds
+    rounds += 1
+    print(f"Round {rounds}")
     player_choice : str = get_player_choice()
     computer_choice: str = get_computer_choice()
 
